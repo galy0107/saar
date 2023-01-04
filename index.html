@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>saar fitness</title>
+    <style>
+      body {
+        background-image: url('back.jpg');
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+	  .element1 {
+    margin-bottom: 3cm;
+  }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .headline {
+ color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 130px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
+      }
+      .instructor-photo {
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        margin: 50px 0;
+      }
+      .description {
+	    color: #a7e8f8; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34;
+        
+      }
+      .contact-button {
+        background-color: yellow;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <div class="element1">Element 1</div>
+    <div class="container">
+      <h1 class="headline">Saar fitness</h1>
+      <img src="saar.jpeg" class="instructor-photo" alt="Instructor Photo">
+      <p  class="description">
+     <br>   מאמן כושר גופני <br>
+  שש שנים של ניסיון אימון בעבודה עם בודדים וקבוצות 
+<br>מ"פ לוחם בצה"ל
+<br>בעל תעודת לבל1 של קרוספיט ארה"ב
+<br>בעל תעודה של המכללה למקצועות הספורט בארץ 
+
+      </p>
+      <button class="contact-button" onclick="location.href='contact.html'">צור קשר</button>
+    </div>
+  </body>
+</html>
