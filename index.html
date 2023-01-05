@@ -3,13 +3,14 @@
     <title>saar fitness</title>
     <style>
       body {
-        background-image: url('back.jpg');
+        background-image: url('gym.jpg');
         background-size: cover;
         margin: 0;
         padding: 0;
       }
 	  .element1 {
-    margin-bottom: 3cm;
+    margin-bottom: 5cm;
+	margin-top: 5cm;
   }
       .container {
         display: flex;
@@ -27,7 +28,7 @@
         margin: 50px 0;
       }
       .description {
-	    color: #a7e8f8; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34;
+	    color: white; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34;
         
       }
       .contact-button {
@@ -48,26 +49,170 @@
 		    margin: auto;
 		    text-align: center;
 	    }
+		
+		@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  background: #e6e6d8 url('https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png');
+  color: #121212;
+}
+
+section.text {
+margin-top:3cm;
+ margin: auto;
+		    text-align: center;
+
+}
+
+h1, h3 {
+  transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+}
+
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70px;
+  text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+}
+
+h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.star {
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;  
+  position: relative;
+}
+
+h3:before, h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+}
+
+h3:before {
+  margin: 5px 0 0 -110px;
+}
+
+h3:after {
+  margin: 5px 0 0 10px;
+}
+
+.container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 50px 0;
+      }
+      .form-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 0 10px;
+        margin: 10px 0;
+      }
+      .form-button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+	   .thank-you {
+        display: none;
+        font-size: 18px;
+        margin: 50px 0;
+      }
+      @media (max-width: 600px) {
+        .form {
+          width: 80%;
+        }
+      }
+
     </style>
   </head>
   <body>
-  <div class="element1">Element 1</div>
+  
+    	 <section class="text">
+		 <div class="element1"></div>
+  <h3>L.a's finest fitness instructor</h3>
+  <h1><span class="fontawesome-star star"></span> <span>Saar Dinar fitness</span> <span class="fontawesome-star star"></span></h1>
+</section>
+
+
     <div class="container">
-      <h1 class="headline">Saar fitness</h1>
-      <img src="saar.jpeg" class="instructor-photo" alt="Instructor Photo">
+	
+
+
+      <img src="saar.jpg" class="instructor-photo" alt="Instructor Photo">
       <p  class="description">
-     <br>   מאמן כושר גופני <br>
-  שש שנים של ניסיון אימון בעבודה עם בודדים וקבוצות 
-<br>מ"פ לוחם בצה"ל
-<br>בעל תעודת לבל1 של קרוספיט ארה"ב
-<br>בעל תעודה של המכללה למקצועות הספורט בארץ 
+     <br>   Physical fitness trainer <br>
+  
+Six years of coaching experience working with individuals and groups
+<br>IDF Company commander
+<br>Level 1 certificate from CrossFit USA
+<br>Got a Certificate from the college for sports professions in Israel
 
       </p>
-      <button class="contact-button" onclick="location.href='contact.html'">צור קשר</button>
+       <div class="container1">
+      <h1>contact</h1>
+      <form action="mailto:galyair97@gmail.com" method="post" enctype="text/plain">
+        <input class="form-input" type="text" name="Name" placeholder="Name">
+        <input class="form-input" type="email" name="E-mail" placeholder="E-mail">
+        <input class="form-input" type="tel" name="Phone" placeholder="Phone">
+        <button class="form-button" type="submit">Hit me up</button>
+      </form>
+	   <p class="thank-you">! תודה רבה,אצור קשר בהקדם </p>
     </div>
-	  <div class="element1">Element 1</div>
+	
+	<script>
+  const form = document.querySelector('.form');
+  const thankYou = document.querySelector('.thank-you');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    thankYou.style.display = 'block';
+    form.style.display = 'none';
+  });
+</script>
+    </div>
+	  <div class="element1"></div>
 	  <div class="youtube">
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/jd7-zvB9oW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/iIoWEuWm_cQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  </div>
   </body>
 </html>
